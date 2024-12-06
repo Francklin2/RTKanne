@@ -5,10 +5,15 @@ Le projet RTKanne est un rover RTK pour aveugles et malvoyants qui peut se fixer
 
 Composants du rover
 - Recepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de receptions en milieu urbain,
-- Antenne multi frequences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité sz reception
+- Antenne multi frequences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité sz reception ( https://gnss.store/gnss-rtk-multiband-antennas/28-elt0014.html )
 - Module bluetooth Ardusimple, compatible Android et IOS
 - Batterie Lithium polymere 1S (4,2V) de 1500mAh pour une dizaine d'heures d'automonie, une batterie de plus grande capacité est possible.
-- Régulateur Ubec 3,3V Pololu avec coupure d'limentation a 3V afin de prserver la batterie d'une décharge excessive.
+- Régulateur Ubec 3,3V Pololu avec coupure d'limentation a 3V afin de preserver la batterie d'une décharge excessive.
 - BMS 1S USB-C pour la recharge de la batterie interne
 - Interupteur ON/OFF
-- Boitier imprimé 3D pouvant se fixer sur une canne ou etre porté dans une pochette exterieure a la ceinture ou au bras 
+- Boitier imprimé 3D pouvant se fixer sur une canne ou etre porté dans une pochette exterieure a la ceinture ou au bras
+
+  Ce projet utilise le recepteur GNSS RTK L1/L2 Ublox ZED-F9R au lieu du ZED-F9P plus courant car il integre une IMU (centrale inertielle) avec gyroscope et accelerometre pour compenser les pertes de signal GPS en milieu urbain ou sous un pont/tunnel, sa precision est de 2 metres d'erreur sur 100 metres en supportant les mouvements et les vibrations si il est fixé sur une canne.
+
+  
+  
