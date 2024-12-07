@@ -29,6 +29,6 @@ Composants du rover
 	Schéma de connexion
     Le récepteur est connecté au module bluetooth par les connecteurs TX et RX en croisant les entrée/sortie TX>RX et RX>TX. Les2 modules sont alimentés par la sortie 3,3volts du régulateur Pololu, celui ci est branché sur la batterie via l'interrupteur. La batterie est aussi connectée au chargeur (BMS) USB-C 
 
-![Github Logo] (https://github.com/Francklin2/RTKanne/blob/main/Schema_GNSS-RTK.jpg)    
+  
      
   
