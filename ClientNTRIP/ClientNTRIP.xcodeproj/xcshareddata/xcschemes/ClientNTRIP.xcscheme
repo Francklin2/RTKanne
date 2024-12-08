@@ -1,35 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "1600"
-   version = "2.2">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
       <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1A8F729B2C6FBACE00BACCA3"
-               BuildableName = "Client NTRIP.app"
-               BlueprintName = "Client NTRIP"
-               ReferencedContainer = "container:Client NTRIP.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <AutocreatedTestPlanReference>
-            </AutocreatedTestPlanReference>
-         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -59,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1A8F72AD2C6FBACF00BACCA3"
-               BuildableName = "Client NTRIPTests.xctest"
-               BlueprintName = "Client NTRIPTests"
-               ReferencedContainer = "container:Client NTRIP.xcodeproj">
+               BuildableName = "ClientNTRIPTests.xctest"
+               BlueprintName = "ClientNTRIPTests"
+               ReferencedContainer = "container:ClientNTRIP.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -70,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1A8F72B72C6FBACF00BACCA3"
-               BuildableName = "Client NTRIPUITests.xctest"
-               BlueprintName = "Client NTRIPUITests"
-               ReferencedContainer = "container:Client NTRIP.xcodeproj">
+               BuildableName = "ClientNTRIPUITests.xctest"
+               BlueprintName = "ClientNTRIPUITests"
+               ReferencedContainer = "container:ClientNTRIP.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -92,22 +69,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A8F729B2C6FBACE00BACCA3"
-            BuildableName = "Client NTRIP.app"
-            BlueprintName = "Client NTRIP"
-            ReferencedContainer = "container:Client NTRIP.xcodeproj">
+            BuildableName = "ClientNTRIP.app"
+            BlueprintName = "ClientNTRIP"
+            ReferencedContainer = "container:ClientNTRIP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-         <AdditionalOption
-            key = "APP_DISTRIBUTOR_ID_OVERRIDE"
-            value = "com.apple.AppStore"
-            isEnabled = "YES">
-         </AdditionalOption>
-      </AdditionalOptions>
-      <LocationScenarioReference
-         identifier = "Paris, France"
-         referenceType = "1">
-      </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -120,20 +86,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A8F729B2C6FBACE00BACCA3"
-            BuildableName = "Client NTRIP.app"
-            BlueprintName = "Client NTRIP"
-            ReferencedContainer = "container:Client NTRIP.xcodeproj">
+            BuildableName = "ClientNTRIP.app"
+            BlueprintName = "ClientNTRIP"
+            ReferencedContainer = "container:ClientNTRIP.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1A8F729B2C6FBACE00BACCA3"
-            BuildableName = "Client NTRIP.app"
-            BlueprintName = "Client NTRIP"
-            ReferencedContainer = "container:Client NTRIP.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
