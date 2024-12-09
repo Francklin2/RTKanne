@@ -1,6 +1,7 @@
 # RTKanne
 A RTK rover on a stick for blind people (Un rover RTK pour aveugles a fixer sur une canne)
 
+![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Canne.jpg)
 Le projet RTKanne est un rover RTK pour aveugles et malvoyants qui peut se fixer sur une canne, il peut fournir une précision de quelques centimètres a une application Android ou IOS. Le système est composé d'un récepteur GNSS Ublox ZED-F9R, un module bluetooth Ardusimple compatible Android/IOS une, batterie interne et utilise en France et dans certains pays d'Europe le reseau open source Centipede (centipede.fr) pour les corrections RTK (une connexion a internet via le smartphone est requise pour obtenir la connexion au serveur centipede.fr). Sur Android il faut utiliser l'application Bluetooth GNSS disponible sur le play store pour que toutes les applications Android puissent utiliser la precision RTK, sur IOS il faut que chaque application soit modifiée poue utiliser le RTK, l'application Sonarvision de guidage pour aveugle et malvoyant sera bientôt disponible avec une version RTK compatible avec RTKanne, actuellement seul SWmaps (qui n'est pas une application de guidage) sur IOS permet de tester le fonctionnement sur IOS, un programme de client Ntrip en swift est disponible ici permettant d'afficher les coordonnées GPS et l'état du rover pour faire des tests et permettre l'adaptation d'autre applications.
 
 La précision de position RTK ne permet de résoudre qu'une partie du problème de navigation et de guidage d'un aveugle, on a bien une position précise mais il faut en plus un logiciel de navigation qui soit adapté a ce niveau de précision, par exemple Google maps pieton valide un point de navigation alors que l'on est dans un rayon d'une dizaine de mètres de ce point, cette imprécision dans la carte de navigation ne permet pas le guidage correct d'un aveugle même en RTK, il faut donc que le coe et le plan de navigation soient adaptés pour tirer pleinement profit d'un positionnement précis. Pour l'instant seule l'appli Sonarvision sur IOS a un guidage précis au mètre prés  pour les aveugles et malvoyant grâce au VPS (visual positionning system) et est en train d'ajouter le RTK a son application   
@@ -31,6 +32,6 @@ Composants du rover
 
   ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Schema_GNSS-RTK.jpg)  
 
-  
+    ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Boitier-ouvert.jpg)
      
   
