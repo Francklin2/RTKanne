@@ -64,7 +64,7 @@ The Sonarvision application is currently in beta testing and should be available
 
 Connection diagram:
 
-  ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Boitier-ouvert.jpg)
+ ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Schema_GNSS-RTK.jpg) 
 
 The receiver is connected to the Bluetooth module via the TX and RX connectors, crossing the input/output TX>RX and RX>TX. Both modules are powered by the 3.3-volt output of the Pololu regulator, which is connected to the battery output of the BMS via the switch. The battery is also connected to the USB-C charger (BMS). The battery is housed in the compartment on the other side of the case.
 
