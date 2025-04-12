@@ -7,6 +7,8 @@ Le projet RTKanne est un rover RTK pour aveugles et malvoyants qui peut se fixer
 
 La précision de position RTK ne permet de résoudre qu'une partie du problème de navigation et de guidage d'un aveugle, on a bien une position précise mais il faut en plus un logiciel de navigation qui soit adapté a ce niveau de précision, par exemple Google maps pieton valide un point de navigation alors que l'on est dans un rayon d'une dizaine de mètres de ce point, cette imprécision dans la carte de navigation ne permet pas le guidage correct d'un aveugle même en RTK, il faut donc que le coe et le plan de navigation soient adaptés pour tirer pleinement profit d'un positionnement précis. Pour l'instant seule l'appli Sonarvision sur IOS a un guidage précis au mètre prés  pour les aveugles et malvoyant grâce au VPS (visual positionning system) et est en train d'ajouter le RTK a son application   
 
+Voici la liste des piéces des différents projets o peux choisir entre le ZED-F9R avec IMU et le ZED-F9P sans IMU, dans le GNSS store on a le choix entre les féquences L1/L2 et L1/L5, le L1/L5 est censé etre plus robuste en milieu urbain ou foret. dans les kits Ardusimple , j'ai mis l'option avec header (connecteurs) soudés à 26 Euros 
+
 Composants du rover RTKanne
 - Récepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de réception en milieu urbain ( https://gnss.store/zed-f9r-dead-reckoning-gnss-modules/134-elt0117.html ) 249,99 Euros
 
