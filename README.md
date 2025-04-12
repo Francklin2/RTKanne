@@ -8,9 +8,13 @@ Le projet RTKanne est un rover RTK pour aveugles et malvoyants qui peut se fixer
 La précision de position RTK ne permet de résoudre qu'une partie du problème de navigation et de guidage d'un aveugle, on a bien une position précise mais il faut en plus un logiciel de navigation qui soit adapté a ce niveau de précision, par exemple Google maps pieton valide un point de navigation alors que l'on est dans un rayon d'une dizaine de mètres de ce point, cette imprécision dans la carte de navigation ne permet pas le guidage correct d'un aveugle même en RTK, il faut donc que le coe et le plan de navigation soient adaptés pour tirer pleinement profit d'un positionnement précis. Pour l'instant seule l'appli Sonarvision sur IOS a un guidage précis au mètre prés  pour les aveugles et malvoyant grâce au VPS (visual positionning system) et est en train d'ajouter le RTK a son application   
 
 Composants du rover RTKanne
-- Récepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de réception en milieu urbain ( https://gnss.store/zed-f9r-dead-reckoning-gnss-modules/134-elt0117.html )
-- Antenne multi fréquences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité de réception ( https://gnss.store/gnss-rtk-multiband-antennas/28-elt0014.html )
-- Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS ( https://fr.ardusimple.com/product/ble-bridge/ )
+- Récepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de réception en milieu urbain ( https://gnss.store/zed-f9r-dead-reckoning-gnss-modules/134-elt0117.html ) 249,99 Euros
+
+ou
+
+- Récepteur RTK sans centrale inertielle Ublox ZED-F9P https://gnss.store/zed-f9p-gnss-modules/273-200-elt0412.html#/61-gnss_module-l1_l2_zed_f9p 189,99 Euros
+- Antenne multi fréquences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité de réception ( https://gnss.store/gnss-rtk-multiband-antennas/28-elt0014.html ) 89 Euros
+- Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS ( https://fr.ardusimple.com/product/ble-bridge/ ) 66 Euros
 - Batterie Lithium polymère 1S (4,2V) de 1500mAh pour une dizaine d'heures d'autonomie, une batterie de plus grande capacité est possible.
 - Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 )
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html )
