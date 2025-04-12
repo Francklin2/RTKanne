@@ -19,13 +19,15 @@ Composants du rover RTKanne
 
 Composants du kit rover RTK2B Ardusimple
  - Récepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de réception en milieu urbain https://fr.ardusimple.com/product/simplertk2b-fusion/ 305 Euros
+
  OU
+ 
  - Récepteur RTK sans centrale inertielle Ublox ZED-F9P https://fr.ardusimple.com/product/simplertk2b/ 193 Euros
  - Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS  https://fr.ardusimple.com/product/ble-bridge/ 66 Euros
  - Boitier imprimé 3D https://fr.ardusimple.com/product/plastic-case-simplertk2b/ 49 Euros
  - Antenne multi fréquences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité de réception https://fr.ardusimple.com/product/helical-antenna/ 99 Euros
 
-   Kit Ardusimple RTK Handheld Surveyor, lcomposants siilaires au RTK2B mais livré en lot ce qui est moins cher que le kit RTK2B (livré non monté)
+   Kit Ardusimple RTK Handheld Surveyor, composants similaires au RTK2B mais livré en lot ce qui est moins cher que le kit RTK2B (livré non monté)
    - https://fr.ardusimple.com/product/rtk-handheld-surveyor-kit/  399 euros
 
 
