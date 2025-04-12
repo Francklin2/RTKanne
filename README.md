@@ -32,6 +32,7 @@ Composants du kit rover RTK2B Ardusimple
  - Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS  https://fr.ardusimple.com/product/ble-bridge/ 66 Euros
  - Boitier imprimé 3D https://fr.ardusimple.com/product/plastic-case-simplertk2b/ 49 Euros
  - Antenne multi fréquences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité de réception https://fr.ardusimple.com/product/helical-antenna/ 99 Euros
+ -  Manuel BT+BLE bridg pour le connecter au ZED-F9 https://fr.ardusimple.com/btble-bridge-hookup-guide/
 
    Kit Ardusimple RTK Handheld Surveyor, composants similaires au RTK2B mais livré en lot ce qui est moins cher que le kit RTK2B (livré non monté) Je n'ai pas monté ce kit mais on devrait pouvoir l'utiliser sans la poignée ou le support smartphone si l'on veut, on peut aussi utiliser un powerbank USB-C pour l'alimenter et économiser la batterie du téléphone.
    - https://fr.ardusimple.com/product/rtk-handheld-surveyor-kit/  399 euros
