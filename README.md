@@ -17,11 +17,16 @@ Composants du rover RTKanne
 - Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
 - Boitier imprimé 3D pouvant se fixer sur une canne ou etre porté dans une pochette exterieure a la ceinture ou au bras
 
-Composants du rover RTK2B Ardusimple
- - Récepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de réception en milieu urbain https://fr.ardusimple.com/product/simplertk2b-fusion/
+Composants du kit rover RTK2B Ardusimple
+ - Récepteur RTK avec centrale inertielle Ublox ZED-F9R, la centrale inertielle permet de compenser les pertes de réception en milieu urbain https://fr.ardusimple.com/product/simplertk2b-fusion/ 305 Euros
  OU
- - Récepteur RTK sans centrale inertielle Ublox ZED-F9P https://fr.ardusimple.com/product/simplertk2b/
- - Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS  https://fr.ardusimple.com/product/ble-bridge/
+ - Récepteur RTK sans centrale inertielle Ublox ZED-F9P https://fr.ardusimple.com/product/simplertk2b/ 193 Euros
+ - Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS  https://fr.ardusimple.com/product/ble-bridge/ 66 Euros
+ - Boitier imprimé 3D https://fr.ardusimple.com/product/plastic-case-simplertk2b/ 49 Euros
+ - Antenne multi fréquences pour drones afin d'avoir une antenne de petite taille avec une bonne qualité de réception https://fr.ardusimple.com/product/helical-antenna/ 99 Euros
+
+   Kit Ardusimple RTK Handheld Surveyor, lcomposants siilaires au RTK2B mais livré en lot ce qui est moins cher que le kit RTK2B (livré non monté)
+   - https://fr.ardusimple.com/product/rtk-handheld-surveyor-kit/  399 euros
 
 
    Ce projet utilise le récepteur GNSS RTK L1/L2 Ublox ZED-F9R au lieu du ZED-F9P plus courant car il intègre en plus une IMU (centrale inertielle avec gyroscope et accéléromètre) pour compenser les pertes de signal GPS en milieu urbain ou sous un pont/tunnel, ce choix peut etre préferable si on habite dans une ville avec de grands immeubles, le récepteur avec IMU est environ 60 euros plus cher, sa précision est de 2 mètres d'erreur sur 100 mètres pendant une perte de signal satellite en supportant les mouvements et les vibrations si il est fixé sur une canne. Le récepteur devrait être configuré avec le logiciel [U-center](https://www.u-blox.com/en/product/u-center)avant de pouvoir l'utiliser avec le bluetooth et les applications
