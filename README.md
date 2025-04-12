@@ -36,6 +36,7 @@ Composants du kit rover RTK2B Ardusimple
    Kit Ardusimple RTK Handheld Surveyor, composants similaires au RTK2B mais livré en lot ce qui est moins cher que le kit RTK2B (livré non monté) Je n'ai pas monté ce kit mais on devrait pouvoir l'utiliser sans la poignée ou le support smartphone si l'on veut, on peut aussi utiliser un powerbank USB-C pour l'alimenter et économiser la batterie du téléphone.
    - https://fr.ardusimple.com/product/rtk-handheld-surveyor-kit/  399 euros
    - Manuel d'assemblage et mise en route avec SWmaps https://fr.ardusimple.com/user-manual-handheld-surveyor-kit/
+   - Manuel de configuration U-center https://fr.ardusimple.com/how-to-configure-ublox-zed-f9p/
 
 
    Ce projet utilise le récepteur GNSS RTK L1/L2 Ublox ZED-F9R au lieu du ZED-F9P plus courant car il intègre en plus une IMU (centrale inertielle avec gyroscope et accéléromètre) pour compenser les pertes de signal GPS en milieu urbain ou sous un pont/tunnel, ce choix peut etre préferable si on habite dans une ville avec de grands immeubles, le récepteur avec IMU est environ 60 euros plus cher, sa précision est de 2 mètres d'erreur sur 100 mètres pendant une perte de signal satellite en supportant les mouvements et les vibrations si il est fixé sur une canne. Le récepteur devrait être configuré avec le logiciel [U-center](https://www.u-blox.com/en/product/u-center)avant de pouvoir l'utiliser avec le bluetooth et les applications
