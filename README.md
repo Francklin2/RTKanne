@@ -53,7 +53,7 @@ Vous trouverez plus d'infos sur la configuration du récepteur dans le [Wiki](ht
 
   ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Boitier-ouvert.jpg)
 
-   Je suis en train de dévelppper un autre récepteur RTK basé sur des composants moins couteux dont le prix total devrait se situer autour de 200 euros, les plans seront disponibles cet été une fois la compatibilités avec les applications confirmée et des performances correctes validées
+   Je suis en train de dévelppper un autre récepteur RTK basé sur des composants moins couteux dont le prix total devrait se situer autour de 200 euros, les plans seront disponibles cet été une fois les performances et la compatibilité validées, pour l'instant les résultats en RTK sont corrects, le boitier n'est pas encore développé mais le wiki est en cours d'écriture pour les premieres infos et le cablage
 
 
 
