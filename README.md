@@ -76,9 +76,8 @@ Vous trouverez plus d'infos sur la configuration du récepteur dans le [Wiki](ht
    J'ai testé d'autres récepteur RTK Navspark PX1122R (L1/L2) et PX1125R (L1/L5) moins couteux dont le prix total du récepteur devrait se situer autour de 200 euros, cela fonctionne mais les résultats sur le terrain sont moins bon qu'avec les Ublox: le récepteur est un peu moins sensible et capte moins de satellites (20 contre 30) et le RTK est un peu moins stable en conditions difficile. Cela reste une solution low cost opérationnelle mais pour une navigation plus fiable je recommande plutôt les récepteurs Ublox.  les schémas de connexion pour les Navspark sont aussi disponibles dans le wiki
 
 Le module Bluetooth Seeed studio Xiao ESP32C3 est une bonne alternative au Bluetooth BT+BLE Ardusimple si on n'utilise que IOS (ne ne se connecte pas a Bluetooth GNSS sur Android) il ne coute que 7 euros environ et fonctionne très bien. Il u a 2 versions du code: XIAO ESP32C3-BLE est optimisée pour les récepteurs Navspark tandis que la version XIAO ESP32C3-V2 est optimisée pour les récepteurs Ublox. 
-=======
-   Je suis en train de dévelppper un autre récepteur RTK basé sur des composants moins couteux dont le prix total devrait se situer autour de 200 euros, les plans seront disponibles cet été une fois les performances et la compatibilité validées, pour l'instant les résultats en RTK sont corrects, le boitier n'est pas encore développé mais le wiki est en cours d'écriture pour les premieres infos et le cablage
->>>>>>> 04561d7d3cc508de653024a1d89cc52019119e2d
+
+
 
 
 
