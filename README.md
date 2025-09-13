@@ -17,16 +17,18 @@ Pour ce projet, j'ai testé différents types de récepteurs GNSS pour trouver c
 - Ublox ZED-F9P: Bonnes performances, pour une utilisation compatible avec le réseau Centipede, il vaut mieux choisir la version L1/L2 plutôt que L1/L5 comme le réseau centipede est majoritairement en L1/L2 (le L5 est plus robuste en ville maisons répandu pour l'instant), il est aussi performant que le X20P en terrain découvert et peut être utilisé comme station de correction Ntripsi on en a pas a proximité. 
 - les récepteurs avec IMU (centrale inertielle gyroscope/accéléromètre)comme le Ublox ZED-F9R ou le Navspark PX1175DR ne sont pas utilisables sur un piéton car il faut une installation fixe sur un châssis, on ne peut pas encore tirer parti de cette option en cas de perte de signal GNSS (tunnels etc)
 - Navspark PX1122R: récepteur L1 L2, moins cher mais aussi peu moins sensible que les Ublox. Le prix de 50$ est attractif mais le port a 94$ est excessif, pas de port USB ce qui oblige a ressouder le câblage pour le configurer, le positionnement est correct.
-- Bynav M10: je ne suis pas arrivé a l'utiliser car il fonctionne en 5 volts et le logiciel de configuration en ligne de commande limite utilisable et peu complet niveau options
+- Bynav M10: je ne suis pas arrivé a l'utiliser car il fonctionne en 5 volts et le logiciel de configuration en ligne de commande limite utilisable et peu complet niveau options.
+
   Je n'ai pas testé les Unicom UM980 ni les Mosaic X5
 
-e module Seeed studio Xiao ESP32C3 avec Bluetooth est une bonne alternative au Bluetooth BT+BLE Ardusimple si on n'utilise que IOS (ne ne se connecte pas encore a Bluetooth GNSS sur Android) il ne coute que 7 euros environ et fonctionne très bien. Il u a 2 versions du code: XIAO ESP32C3-BLE est optimisée pour les récepteurs Navspark tandis que la version XIAO ESP32C3-V2 est optimisée pour les récepteurs Ublox. 
+Le module Seeed studio Xiao ESP32C3 avec Bluetooth est une bonne alternative au Bluetooth BT+BLE Ardusimple si on n'utilise que IOS (ne ne se connecte pas encore a Bluetooth GNSS sur Android) il ne coute que 7 euros environ et fonctionne très bien. Il u a 2 versions du code: XIAO ESP32C3-BLE est optimisée pour les récepteurs Navspark tandis que la version XIAO ESP32C3-V2 est optimisée pour les récepteurs Ublox. 
+
+L'antenne Beitian BT-560 est aussi une alternative moins couteuse à 34 euros, elle est de forme identique a celle de chez Ardusimple et offre des performances similaires. 
 
 
 
 Voici la liste des pièces des différents projets, dans le GNSS store on a le choix pour le ZED-F9P entre les fréquences L1/L2 et L1/L5, le L1/L5 est censé être plus robuste en milieu urbain ou foret mais pour une meilleure compatibilité avec le réseau Centipede le L1 L2 est recommandé sauf si vous avez une station L1 L5 près de chez vous. On peut aussi choisir le ZED-X20P qui est en triple fréquence L1 L2 L5, il est plus cher mais offre une meilleure qualité de réception en milieu perturbé et plus de précision en mode DGPS/HAS si il y a une coupure de réseau NTRIP (zone blanches GSM)  
 
-L'antenne Beitian BT-560 est aussi une alternative moins couteuse à 34 euros, elle est de forme identique a celle de chez Ardusimple et offre les mêmes performances  
 
 Composants du rover RTKanne
 
@@ -37,7 +39,7 @@ Composants du rover RTKanne
 - Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
 - Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
-- Boitier imprimé 3D pouvant se fixer sur une canne 
+- Boitier imprimé 3D RTKanne pouvant se fixer sur une canne 
 
 Composants du rover BlueRTK (Boitier plus petit et amélioré pour poche ou pochette ventrale) 
 
@@ -48,7 +50,7 @@ Composants du rover BlueRTK (Boitier plus petit et amélioré pour poche ou poch
 - Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
 - Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
-- Boitier imprimé 3D pouvant être porté dans une pochette extérieure
+- Boitier imprimé 3D BlueRTK pouvant être porté dans une pochette ventrale ou une poche
 
 Composants du kit rover RTK2B Ardusimple (voir aussi sur leur site,le RTK3B basé sur le ZED-X20P)
  
