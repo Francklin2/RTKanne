@@ -29,6 +29,16 @@ L'antenne Beitian BT-560 est aussi une alternative moins couteuse à 34 euros, e
 
 Voici la liste des pièces des différents projets, dans le GNSS store on a le choix pour le ZED-F9P entre les fréquences L1/L2 et L1/L5, le L1/L5 est censé être plus robuste en milieu urbain ou foret mais pour une meilleure compatibilité avec le réseau Centipede le L1 L2 est recommandé sauf si vous avez une station L1 L5 près de chez vous. On peut aussi choisir le ZED-X20P qui est en triple fréquence L1 L2 L5, il est plus cher mais offre une meilleure qualité de réception en milieu perturbé et plus de précision en mode DGPS/HAS si il y a une coupure de réseau NTRIP (zone blanches GSM)  
 
+Composants du rover BlueRTK (Boitier plus petit et amélioré pour poche ou pochette ventrale) 
+
+- Récepteur RTK L1/L2/L3 Ublox ZED-X20P de chez [GNSS Store](https://gnss.store/high-precision-rtk-gnss-modules/415-elt0421.html)  229,99 Euros HT/ 282 Euros TTC avec port
+- Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html?pdp_npi=4%40dis%21EUR%21€%2016%2C69%21€%2015%2C69%21%21%2119.00%2117.86%21%40211b876717565823921947665ef2ad%2112000031416205032%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007550542376.32991527632&gatewayAdapt=glo2fra)
+- Module bluetooth Seeed Studio Xiao ESP32C3 7 Euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007039705247.html?pdp_npi=4%40dis%21EUR%21€%200%2C16%21€%200%2C15%21%21%211.26%211.26%21%402103890117565830582966233e6eec%2112000049940483727%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2008969535028.1005007039705247&gatewayAdapt=glo2fra)
+- Batterie Lithium Huawei HB434666RBC 1S (4,2V) de 1500mAh pour une 8 heures environ d'autonomie, [Aliexpress](https://fr.aliexpress.com/item/1005007779320044.html?spm=a2g0o.productlist.main.2.4820120fCAlR22&algo_pvid=2b236e09-1e44-4475-8715-a39067711af4&algo_exp_id=2b236e09-1e44-4475-8715-a39067711af4-20&pdp_ext_f=%7B%22order%22%3A%22112%22%2C%22eval%22%3A%221%22%7D&pdp_npi=6%40dis%21EUR%215.81%215.79%21%21%2147.12%2146.96%21%402103835e17565834234122746e262c%2112000042179133702%21sea%21FR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A95973152%3Bm03_new_user%3A-29895&curPageLogUid=83VfqMqkhdjr&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007779320044%7C_p_origin_prod%3A)
+- Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
+- BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
+- Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
+- Boitier imprimé 3D BlueRTK pouvant être porté dans une pochette ventrale ou une poche
 
 Composants du rover RTKanne
 
@@ -40,17 +50,6 @@ Composants du rover RTKanne
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
 - Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
 - Boitier imprimé 3D RTKanne pouvant se fixer sur une canne 
-
-Composants du rover BlueRTK (Boitier plus petit et amélioré pour poche ou pochette ventrale) 
-
-- Récepteur RTK L1/L2/L3 Ublox ZED-X20P de chez [GNSS Store](https://gnss.store/high-precision-rtk-gnss-modules/415-elt0421.html)  229,99 Euros HT/ 282 Euros TTC avec port
-- Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html?pdp_npi=4%40dis%21EUR%21€%2016%2C69%21€%2015%2C69%21%21%2119.00%2117.86%21%40211b876717565823921947665ef2ad%2112000031416205032%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007550542376.32991527632&gatewayAdapt=glo2fra)
-- Module bluetooth Seeed Studio Xiao ESP32C3 7 Euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007039705247.html?pdp_npi=4%40dis%21EUR%21€%200%2C16%21€%200%2C15%21%21%211.26%211.26%21%402103890117565830582966233e6eec%2112000049940483727%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2008969535028.1005007039705247&gatewayAdapt=glo2fra)
-- Batterie Lithium Huawei HB434666RBC 1S (4,2V) de 1500mAh pour une 8 heures environ d'autonomie, [Aliexpress](https://fr.aliexpress.com/item/1005007779320044.html?spm=a2g0o.productlist.main.2.4820120fCAlR22&algo_pvid=2b236e09-1e44-4475-8715-a39067711af4&algo_exp_id=2b236e09-1e44-4475-8715-a39067711af4-20&pdp_ext_f=%7B%22order%22%3A%22112%22%2C%22eval%22%3A%221%22%7D&pdp_npi=6%40dis%21EUR%215.81%215.79%21%21%2147.12%2146.96%21%402103835e17565834234122746e262c%2112000042179133702%21sea%21FR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A95973152%3Bm03_new_user%3A-29895&curPageLogUid=83VfqMqkhdjr&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005007779320044%7C_p_origin_prod%3A)
-- Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
-- BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
-- Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
-- Boitier imprimé 3D BlueRTK pouvant être porté dans une pochette ventrale ou une poche
 
 Composants du kit rover RTK2B Ardusimple (voir aussi sur leur site,le RTK3B basé sur le ZED-X20P)
  
