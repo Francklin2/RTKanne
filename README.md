@@ -78,7 +78,7 @@ Composants du kit rover RTK2B Ardusimple (voir aussi sur leur site,le RTK3B bas√
 Vous trouverez plus d'infos sur la configuration du r√©cepteur dans le [Wiki](https://github.com/Francklin2/RTKanne/wiki)  
 
 
-  ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Schema_GNSS-RTK.jpg)  
+  ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Schema_GNSS-RTK.jpg)  
 
   ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Boitier-ouvert.jpg)
 
