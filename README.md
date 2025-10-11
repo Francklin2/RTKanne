@@ -86,7 +86,7 @@ Vous trouverez plus d'infos sur la configuration du récepteur dans le [Wiki](ht
 ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/BlueRTK-ouvert.jpg)
 
 COMPARE THE UBLOX ZED-F9P VS ZED-X20P
-[Github Logo](https://www.youtube.com/RUgDCJcdhyc)
+[Github Logo](https://www.youtube.com/watch?v=RUgDCJcdhyc)
 
 
 
