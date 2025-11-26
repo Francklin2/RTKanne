@@ -79,6 +79,7 @@ Vous trouverez plus d'infos sur la configuration du récepteur dans le [Wiki](ht
 
 [Video COMPARE THE UBLOX ZED-F9P VS ZED-X20P](https://www.youtube.com/watch?v=RUgDCJcdhyc) 
 
+[Video Guidage RTK avec l'application Sonarvision](https://youtu.be/zTxEzIDLCAY) 
 
   ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Schema_GNSS-RTK.jpg)  
 
