@@ -1,16 +1,25 @@
 # RTKanne
-A Bluetooth RTK rover on a stick for blind people (Un rover RTK Bluetooth pour aveugles a fixer sur une canne)
+A Bluetooth RTK rover on a stick or box for blind people (Un rover RTK Bluetooth pour aveugles en boitier ou a fixer sur une canne)
 English version below
 
 ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Canne.jpg)
 ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/BlueRTK.jpg)
 ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/BlueRTK1.jpg)
 
-Le projet RTKanne est un rover RTK pour aveugles et malvoyants qui peut se fixer sur une canne ou être mis dans une pochette sur la poitrine avec le smartphone ou même dans une poche de ses vêtement (boitier version BlueRTK), on peut aussi assembler et utiliser le kit RTK2B/RTK3B d'Ardusimple qui est conçu avec les même récepteurs, il peut fournir une précision de quelques centimètres a une application Android ou IOS. Le système est composé d'un récepteur GNSS Ublox ZED-F9P/ZED-X20P ou le PX122R Navspark (un peu moins performant) ), un module bluetooth Ardusimple compatible Android/IOS ou un Bluetooth Xiao ESP32C3 compatible IOS, une batterie interne avec son chargeur BMS USB-C et un régulateur 3,3 Volts
+Les projets RTKanne et Blue RTX sont des rover RTK pour aveugles et malvoyants qui peuvent se fixer sur une canne (prpjet initial RTKanne) ou un boitier plus compact à mettre dans une pochette sur la poitrine avec le smartphone ou même dans une poche de ses vêtement (projet final Blue RTK),il peut fournir une précision de quelques centimètres a une application IOS ou Android. Le système est composé du ZED-X20P, un module bluetooth  ou un Bluetooth Xiao ESP32C3 (Ardusimple sur RTKANNE), une batterie interne avec son chargeur BMS USB-C et un régulateur 3,3 Volts Pololu. Un PCB de carte mère et un nouveau boitier on été développé par My Human Kit à Rennes afin de fiabiliser le boitier et simplifier sa fabrication (My Human Kit est un Fablab dédié au handicap).
 
-Ce récepteur utilise le réseau NTRIP du réseau open source Centipede (centipede.fr) fonctionnant en France et dans certains pays d'Europe pour obtenir les corrections RTK (une connexion a internet via le smartphone est requise). Sur Android il faut utiliser l'application Bluetooth GNSS disponible sur le play store pour que toutes les applications Android puissent utiliser la précision RTK, sur IOS il faut que chaque application soit modifiée poue utiliser le RTK, l'application Sonarvision de guidage pour aveugle et malvoyant est disponible avec une option RTK compatible avec ce projet et fournit des trajets adapté au mètre près, actuellement SWmaps (qui n'est pas une application de guidage) permet aussi de tester le bon fonctionnement du récepteur sur IOS, un programme de client Ntrip en swift est disponible ici permettant d'afficher les coordonnées GPS et l'état du rover pour faire des tests et permettre l'adaptation du RTK sur d'autre applications.
+Ce récepteur utilise le réseau NTRIP du réseau open source Centipede (centipede.fr) fonctionnant en France et dans certains pays d'Europe pour obtenir les corrections RTK (une connexion a internet via le smartphone est requise). 
+La précision de position RTK ne permet de résoudre qu'une partie du problème de navigation et de guidage d'un aveugle, si on a bien une position précise, il faut en plus un logiciel de navigation qui soit adapté a ce niveau de précision, par exemple Google maps piéton valide un point de navigation alors que l'on est dans un rayon d'une dizaine de mètres de ce point, cette imprécision dans la carte de navigation et du trajet ne permet pas le guidage correct d'un aveugle même en RTK, il faut donc que le logiciel et le trajet de navigation soient adaptés pour tirer pleinement profit d'un positionnement précis. Pour l'instant seule l'application Sonarvision sur IOS propose des trajets précis au mètre prés  pour les aveugles et malvoyant grâce au VPS (visual positionning system) ou au récepteur RTK 
 
-La précision de position RTK ne permet de résoudre qu'une partie du problème de navigation et de guidage d'un aveugle, on a bien une position précise mais il faut en plus un logiciel de navigation qui soit adapté a ce niveau de précision, par exemple Google maps piéton valide un point de navigation alors que l'on est dans un rayon d'une dizaine de mètres de ce point, cette imprécision dans la carte de navigation et du trajet ne permet pas le guidage correct d'un aveugle même en RTK, il faut donc que le logiciel et le trajet de navigation soient adaptés pour tirer pleinement profit d'un positionnement précis. Pour l'instant seule l'application Sonarvision sur IOS a un guidage précis au mètre prés  pour les aveugles et malvoyant grâce au VPS (visual positionning system) ou au récepteur RTK   
+    Utilisation sur IOS
+   L'application Sonarvision est disponible avec l'option RTK depuis mi 2025 avec de nouvelles fonctionnalités  afin de profiter pleinement des possibilités du RTK comme l'enregistrement de traces pour créer un parcours hors zone couvertes par le VPS ou sans passer par l'éditeur de trajets, l'application est disponible sur sonarvision.fr ou sur l'appstore. Pour tester le bon fonctionnement du Rover RTKanne, vous pouvez aussi utiliser SWmaps disponible sur l'apple store ou installer le code de Client Ntrip présent sur ce dépôt a l'aide de Xcode, il faut installer Xcode sur un Mac, charger et compiler le code de Client Ntrip, connecter l'iPhone en mode développeur au Mac pour créer cette application. Les paramètres Ntrip de centipede sont déjà configurés et on peut afficher les coordonnées de position, le nombre de satellites reçus, la précision de la position, l'état de la connexion a centipede.fr , ce code sert surtout à montrer comment le RTK peut etre ajouté à une application IOS.
+   
+[Video Guidage RTK avec l'application Sonarvision](https://youtu.be/zTxEzIDLCAY) 
+   
+      Utilisation sur Android
+  Pour utiliser en rover RTKanne (Bluetooth classique Ardusimple)sur Android et que le smartphone et toutes les applications utilisent la position RTK, vous devrez installer et utiliser l'application Bluetooth GNSS qui se trouve sur le playstore. Pour que Bluetooth GNSS puisse remplacer la position donnée par le récepteur GPS du smartphone par celle donnée par le rover (fonction appelée "Mock Location") vous devrez  passer Android en mode développeur. Une fois Bluetooth GNSS paramètré avec la connexion bluetooth, la connexion au serveur Ntrip centipede.fr et le choix de la station (ou Moutpoint) la plus proche choisi (il y a une fonction pour choisir la plus proche automatiquement), vous lancez la connexion avec le bouton en bas a droite et la position RTK sera utilisée par toutes les applications qui seront lancées ensuite, mais il faut garder bluetooth GNSS en fond de tache. Ie Bluetooth BLE est en cours de développement sur Bluetooth GNSSce qui permettra d'utiliserBlie RTK,SWmaps est aussi disponible sur Androidavec le BLE et dispose de l'option Mock lmocation.
+
+  
 
 Pour ce projet, j'ai testé différents types de récepteurs GNSS pour trouver ceux qui fonctionnent bien pour cette utilisation, souvent dans des situations difficiles comme les canyons urbains ou les forêts. Le Ublox ZED-X20P est celui qui est le plus performant et que je recommande dans notre utilisation d'après mes tests, suivi du ZED-F9P dont la position est un peu moins robuste en condition difficile. Voici les récepteurs que j'ai pu tester sur le terrain:
  - Ublox ZED-X20P: récepteur triple fréquence L1 L2 L5, celui qui a une position RTK Fix la plus robuste la plus rapide, il n'inclue pas la constellation Glonass mais la triple fréquence me compense bien et il sera compatible HAS Galiléo en 2026 avec une mise à jour du firmware.
@@ -18,39 +27,42 @@ Pour ce projet, j'ai testé différents types de récepteurs GNSS pour trouver c
 - les récepteurs avec IMU (centrale inertielle gyroscope/accéléromètre)comme le Ublox ZED-F9R ou le Navspark PX1175DR ne sont pas utilisables sur un piéton car il faut une installation fixe sur un châssis, on ne peut pas encore tirer parti de cette option en cas de perte de signal GNSS (tunnels etc)
 - Navspark PX1122R: récepteur L1 L2, moins cher mais aussi peu moins sensible que les Ublox. Le prix de 50$ est attractif mais le port a 94$ est excessif, pas de port USB ce qui oblige a ressouder le câblage pour le configurer, le positionnement est correct.
 - Bynav M10: je ne suis pas arrivé a l'utiliser car il fonctionne en 5 volts et le logiciel de configuration en ligne de commande limite utilisable et peu complet niveau options.
-
   Je n'ai pas testé les Unicom UM980 ni les Mosaic X5
-
+   
+   [Video COMPARE THE UBLOX ZED-F9P VS ZED-X20P](https://www.youtube.com/watch?v=RUgDCJcdhyc)
+   
 Le module Seeed studio Xiao ESP32C3 avec Bluetooth est une bonne alternative au Bluetooth BT+BLE Ardusimple si on n'utilise que IOS (ne ne se connecte pas encore a Bluetooth GNSS sur Android) il ne coute que 7 euros environ et fonctionne très bien. Il u a 2 versions du code: XIAO ESP32C3-BLE est optimisée pour les récepteurs Navspark tandis que la version XIAO ESP32C3-V2 est optimisée pour les récepteurs Ublox. 
 
 L'antenne Beitian BT-560 est aussi une alternative moins couteuse à 34 euros, elle est de forme identique a celle de chez Ardusimple et offre des performances similaires. 
 
 
 
-Voici la liste des pièces des différents projets, dans le GNSS store on a le choix pour le ZED-F9P entre les fréquences L1/L2 et L1/L5, le L1/L5 est censé être plus robuste en milieu urbain ou foret mais pour une meilleure compatibilité avec le réseau Centipede le L1 L2 est recommandé sauf si vous avez une station L1 L5 près de chez vous. On peut aussi choisir le ZED-X20P qui est en triple fréquence L1 L2 L5, il est plus cher mais offre une meilleure qualité de réception en milieu perturbé et plus de précision en mode DGPS/HAS si il y a une coupure de réseau NTRIP (zone blanches GSM)  
+Voici la liste des pièces des différents projets, dans le GNSS store on a le choix pour le ZED-F9P entre les fréquences L1/L2 et L1/L5, le L1/L5 est censé être plus robuste en milieu urbain ou foret mais pour une meilleure compatibilité avec le réseau Centipede le L1 L2 est recommandé sauf si vous avez une station L1 L5 près de chez vous. On peut aussi choisir le ZED-X20P qui est en triple fréquence L1 L2 L5, il est un peu plus cher mais offre une meilleure qualité de réception en milieu perturbé et plus de précision en mode DGPS/HAS si il y a une coupure de réseau NTRIP (zone blanches GSM)  
 
-Composants du rover BlueRTK (Boitier plus petit et amélioré pour poche ou pochette ventrale) 
+Composants du rover Blue RTK (Boitier plus petit pour poche ou pochette ventrale) Compter 373,80 euros environ + 1 ilpression 3D du boitier (entre 30 et 40 euros chez un imprimeur en ligne) 
 
-- Récepteur RTK L1/L2/L3 Ublox ZED-X20P de chez [GNSS Store](https://gnss.store/high-precision-rtk-gnss-modules/415-elt0421.html)  229,99 Euros HT/ 282 Euros TTC avec port
-- Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html?pdp_npi=4%40dis%21EUR%21€%2016%2C69%21€%2015%2C69%21%21%2119.00%2117.86%21%40211b876717565823921947665ef2ad%2112000031416205032%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007550542376.32991527632&gatewayAdapt=glo2fra)
+- Récepteur RTK L1/L2/L5 Ublox ZED-X20P de chez [GNSS Store](https://gnss.store/high-precision-rtk-gnss-modules/415-elt0421.html)  229,99 Euros HT/ 282 Euros TTC avec port
+- Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html?pdp_npi=4%40dis%21EUR%21€%2016%2C69%21€%2015%2C69%21%21%2119.00%2117.86%21%40211b876717565823921947665ef2ad%2112000031416205032%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007550542376.32991527632&gatewayAdapt=glo2fra) ATTENTION il faut bien choisir la BT560 dans le shop
 - Module bluetooth Seeed Studio Xiao ESP32C3 7 Euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007039705247.html?pdp_npi=4%40dis%21EUR%21€%200%2C16%21€%200%2C15%21%21%211.26%211.26%21%402103890117565830582966233e6eec%2112000049940483727%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2008969535028.1005007039705247&gatewayAdapt=glo2fra)
-- Batterie Lithium Huawei HB434666RBC 1S (4,2V) de 1500mAh pour une 8 heures environ d'autonomie, [Les batteries du web](https://www.lesbatteriesduweb.fr/batterie-telephone-portable-pour-huawei-hb434666rbc-xml-5799_10491-1063348.html)
+- Batterie Lithium Huawei HB434666RBC 1S (4,2V) de 1500mAh pour une 8 heures environ d'autonomie, 18,90  euros [Les batteries du web](https://www.lesbatteriesduweb.fr/batterie-telephone-portable-pour-huawei-hb434666rbc-xml-5799_10491-1063348.html)
 - Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
-- Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
-- Boitier imprimé 3D BlueRTK pouvant être porté dans une pochette ventrale ou une poche
+- Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 ) 
+- Boitier imprimé 3D Blue RTK (version avec et sans PCB)
+- PCB pour la version avec carte mère (plus simple à monter et plus fiable) 20,40 euros chez [Aisler](https://aisler.net/p/GPDCRTQV)
 
-Composants du rover RTKanne
+Composants du rover RTKanne compter environ 448,29 euros + 1 impression 3D (30/40 euros chez un imprimeur en ligne)
 
-- Récepteur RTK L1/L2 Ublox ZED-F9P https://gnss.store/zed-f9p-gnss-modules/273-200-elt0412.html#/61-gnss_module-l1_l2_zed_f9p 189,99 Euros HT
+- Récepteur RTK L1/L2 Ublox ZED-F9P ou ZED-X20P https://gnss.store/zed-f9p-gnss-modules/273-200-elt0412.html#/61-gnss_module-l1_l2_zed_f9p 189,99 Euros HT
 - Antenne L1 L2 L5 pour drones afin d'avoir une antenne de petite taille avec une bonne qualité de réception ( https://gnss.store/gnss-rtk-multiband-antennas/28-elt0014.html ) 69 Euros
 - Module bluetooth  BT+BLE bridge Ardusimple, compatible Android et IOS ( https://fr.ardusimple.com/product/ble-bridge/ ) 66 Euros
 - Batterie Lithium polymère 1S (4,2V) de 1500mAh pour une dizaine d'heures d'autonomie, une batterie de plus grande capacité est possible.[Les batteries du web](https://www.lesbatteriesduweb.fr/batterie-telephone-portable-pour-huawei-hb434666rbc-xml-5799_10491-1063348.html)
-- Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
+- Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,90 euros
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
 - Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 )
 - Boitier imprimé 3D RTKanne pouvant se fixer sur une canne 
 
+Ardusimple propose ussi des Kits RTK, comme ils sont dépourvu de batterie interne ils néccessitent un powerbank et sont plus encombrants mais plus simples a assembler (pas de soudure)
 Composants du kit rover RTK2B Ardusimple (voir aussi sur leur site,le RTK3B basé sur le ZED-X20P)
  
  - Récepteur RTK L1/L2 Ublox ZED-F9P https://fr.ardusimple.com/product/simplertk2b/ 193 Euros
@@ -64,22 +76,15 @@ Composants du kit rover RTK2B Ardusimple (voir aussi sur leur site,le RTK3B bas�
    - Manuel d'assemblage et mise en route avec SWmaps https://fr.ardusimple.com/user-manual-handheld-surveyor-kit/
    - Manuel de configuration U-center https://fr.ardusimple.com/how-to-configure-ublox-zed-f9p/
 
-  Le positionnement RTK (real time kinematic) est un système qui utilise un récepteur mobile (le rover) et des stations (les bases, stations ou moutpoint) qui lui apportent les corrections de position nécessaire pour obtenir une précision pouvant aller jusqu'au centimètre. Pour obtenir une bonne précision il faut etre a moins de 40Km d'une base mais pour notre utilisation on peut aller jusqu'a 70Km, il faut donc une couverture complète du pays avec des stations de corrections et l'accès a ces services est payant par abonnement, depuis quelques années un réseau de stations open source et gratuit s'est développé grâce au agriculteurs: le réseau [centipede](https://docs.centipede.fr) , ce réseau permet de se connecter au stations via un client Ntrip, si il n'y a pas de station dans la région, on peut en construire une avec un faible cout et l'ajouter au réseau, ce qui a permit au réseau centipede de s'agrandir rapidement. Vous pourrez trouver toutes les informations pour construire et connecter sa base ou son rover sur [centipede.fr](https://docs.centipede.fr) . Le réseau centipede est composé a environ 90% de stations au fréquences L1/L2, il est donc préférable de choisir un récepteur RTK en L1/L2 plutôt que la version L1/L5, il existe aussi des versions pro ZED-X20P triple bande L1/L2/L5 un peu plus couteuse (229 euros HT contre 189 euros HT) mais a la qualité de réception et une précision plus robuste  
+  Le positionnement RTK (real time kinematic) est un système qui utilise un récepteur mobile (le rover) et des stations (les bases, stations ou moutpoint) qui lui apportent les corrections de position nécessaire pour obtenir une précision pouvant aller jusqu'au centimètre. Pour obtenir une bonne précision il faut etre a moins de 40Km d'une base mais pour notre utilisation on peut aller jusqu'a 70Km, il faut donc une couverture complète du pays avec des stations de corrections et l'accès a ces services est payant par abonnement, depuis quelques années un réseau de stations open source et gratuit s'est développé grâce au agriculteurs: le réseau [centipede](https://docs.centipede.fr) , ce réseau permet de se connecter au stations via un client Ntrip, si il n'y a pas de station dans la région, on peut en construire une avec un faible cout (envirton 400 euros) et l'ajouter au réseau, ce qui a permit au réseau centipede de s'agrandir rapidement. Vous pourrez trouver toutes les informations pour construire et connecter sa base ou son rover sur [centipede.fr](https://docs.centipede.fr) . Le réseau centipede est composé a environ 90% de stations au fréquences L1/L2, il est donc préférable de choisir un récepteur RTK en L1/L2 plutôt que la version L1/L5, le ZED-X20P triple bande L1/L2/L5 un peu plus couteuse (229 euros HT contre 189 euros HT) mais a la qualité de réception et une précision plus robuste  
 
-   Utilisation sur Android
-  Pour utiliser en rover RTKanne sur Android et que le smartphone et toutes les applications utilisent la position RTK, vous devrez installer et utiliser l'application Bluetooth GNSS qui se trouve sur le playstore. Pour que Bluetooth GNSS puisse remplacer la position donnée par le récepteur GPS du smartphone par celle donnée par le rover (fonction appelée "Mock Location") vous devrez  passer Android en mode développeur. Une fois Bluetooth GNSS paramètré avec la connexion bluetooth, la connexion au serveur Ntrip centipede.fr et le choix de la station (ou Moutpoint) la plus proche choisi (il y a une fonction pour choisir la plus proche automatiquement), vous lancez la connexion avec le bouton en bas a droite et la position RTK sera utilisée par toutes les applications qui seront lancées ensuite, mais il faut garder bluetooth GNSS en fond de tache. 
-
-	Utilisation sur IOS
-   L'application Sonarvision est disponible avec l'option RTK depuis mi 2025 avec de nouvelles fonctionnalités afin de profiter pleinement des possibilités du RTK comme l'enregistrement de traces GPX pour créer un parcours, pour tester le bon fonctionnement du Rover RTKanne, vous pouvez aussi utiliser SWmaps disponible sur l'apple store ou installer le code de Client Ntrip présent sur ce dépôt a l'aide de Xcode, il faut installer Xcode sur un Mac, charger et compiler le code de Client Ntrip, connecter l'iPhone en mode développeur au Mac pour créer cette application. Les paramètres Ntrip de centipede sont déjà configurés et on peut afficher les coordonnées de position, le nombre de satellites reçus, la précision de la position, l'état de la connexion a centipede.fr
-
-	Schéma de connexion ZED-F9P/ZED-X20P
+  
+	
+	Schéma de connexion ZED-X20P/ZED-F9P
     Le récepteur est connecté au module bluetooth par les connecteurs TX et RX en croisant les entrée/sortie TX>RX et RX>TX. Les 2 modules sont alimentés par la sortie 3,3volts du régulateur Pololu, celui ci est branché sur la sortie batterie du BMS via l'interrupteur. La batterie est aussi connectée au chargeur (BMS) USB-C. La batterie est logée dans le compartiment de l'autre coté du boitier.
 
 Vous trouverez plus d'infos sur la configuration du récepteur dans le [Wiki](https://github.com/Francklin2/RTKanne/wiki) 
 
-[Video COMPARE THE UBLOX ZED-F9P VS ZED-X20P](https://www.youtube.com/watch?v=RUgDCJcdhyc) 
-
-[Video Guidage RTK avec l'application Sonarvision](https://youtu.be/zTxEzIDLCAY) 
 
   ![Github Logo](https://github.com/Francklin2/RTKanne/blob/main/Images/Schema_GNSS-RTK.jpg)  
 
