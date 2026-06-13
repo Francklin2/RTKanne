@@ -1,0 +1,252 @@
+{
+	"type": "CFG-ITEM",
+	"items": [
+		{
+			"key": "0x209100bb",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "def62f63-1561-49f3-ad01-a96ceb9aba15"
+		},
+		{
+			"key": "0x209100bb",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "1b5364f3-9eeb-4d07-9f4a-3464a98382fa"
+		},
+		{
+			"key": "0x209100bb",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "44aa6430-787d-40eb-a974-75c7e4643472"
+		},
+		{
+			"key": "0x209100c0",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "2e9374a9-1712-4d42-a327-d06bbb033b10"
+		},
+		{
+			"key": "0x209100c0",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "346597fc-0147-47c0-8ee9-07852df1c143"
+		},
+		{
+			"key": "0x209100c0",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "e8185e07-4970-414b-b5ec-88a62eb3ee46"
+		},
+		{
+			"key": "0x209100d4",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "4382b26d-0244-45f3-9885-900ea44c1481"
+		},
+		{
+			"key": "0x209100d4",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "daa7f145-93f2-41f8-a92f-4014785db0cf"
+		},
+		{
+			"key": "0x209100d4",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "29573227-a7e6-4796-a74c-4a68680e9440"
+		},
+		{
+			"key": "0x209100ac",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "d8c7979c-17c0-4a04-bb2d-f8218b60d56d"
+		},
+		{
+			"key": "0x209100ac",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "35543d6a-849a-4cca-99a0-4db1736342d0"
+		},
+		{
+			"key": "0x209100ac",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "ce835278-b64a-401d-96d8-0e78756f58f5"
+		},
+		{
+			"key": "0x209100b1",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "0dc142f9-4ecb-4651-a0a3-fa65e3783d7a"
+		},
+		{
+			"key": "0x209100b1",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "c59110a2-bfa7-482c-a9ad-27fe88409797"
+		},
+		{
+			"key": "0x209100b1",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U1",
+			"requestId": "d41958c4-d42a-4a68-ad1f-5297c5103b84"
+		},
+		{
+			"key": "0x20110021",
+			"value": 3,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "E1"
+		},
+		{
+			"key": "0x20110021",
+			"value": 3,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "E1"
+		},
+		{
+			"key": "0x20110021",
+			"value": 3,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "E1"
+		},
+		{
+			"key": "0x10360004",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x10360004",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x10360004",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x30210001",
+			"value": 200,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U2"
+		},
+		{
+			"key": "0x30210001",
+			"value": 200,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U2"
+		},
+		{
+			"key": "0x30210001",
+			"value": 200,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U2"
+		},
+		{
+			"key": "0x40520001",
+			"value": 115200,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "U4"
+		},
+		{
+			"key": "0x40520001",
+			"value": 115200,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "U4"
+		},
+		{
+			"key": "0x40520001",
+			"value": 115200,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "U4"
+		},
+		{
+			"key": "0x10520005",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x10520005",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x10520005",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x100d0002",
+			"value": 1,
+			"layer": 0,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x100d0002",
+			"value": 1,
+			"layer": 1,
+			"action": "Set",
+			"valueType": "L"
+		},
+		{
+			"key": "0x100d0002",
+			"value": 1,
+			"layer": 2,
+			"action": "Set",
+			"valueType": "L"
+		}
+	],
+	"description": ""
+}
