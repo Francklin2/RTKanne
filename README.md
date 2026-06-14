@@ -46,9 +46,13 @@ Composants du rover Blue RTK (Boitier plus petit pour poche ou pochette ventrale
 - Batterie Lithium Huawei HB434666RBC 1S (4,2V) de 1500mAh pour une 8 heures environ d'autonomie, 18,90  euros [Les batteries du web](https://www.lesbatteriesduweb.fr/batterie-telephone-portable-pour-huawei-hb434666rbc-xml-5799_10491-1063348.html)
 - Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
-- Interrupteur ON/OFF ( https://www.ebay.fr/itm/251390016446 ) 
+- Interrupteur ON/OFF (https://www.ebay.fr/itm/251390016446) ou (https://www.aliexpress.com/item/1005001792406484.html) 
 - Boitier imprimé 3D Blue RTK (version avec et sans PCB)
+Pour elle montage des composants avec un PCB acheter en plus:
 - PCB pour la version avec carte mère (plus simple à monter et plus fiable) 20,40 euros chez [Aisler](https://aisler.net/p/GPDCRTQV)
+- Barrette mâle droit 2,54mm sécable 40pin (https://www.ebay.fr/itm/116002953919?var=416149221180)
+- Cable silicone pour la batterie et l'interrupteur avec connecteur 2,54mm femelle
+- visserie et rondelles pour le boitier, Philips m2x10mm tête fraisée + M2x5mm tête plate, rondelle plastique.
 
 Composants du rover RTKanne compter environ 448 euros + 1 impression 3D (30/40 euros chez un imprimeur en ligne)
 
