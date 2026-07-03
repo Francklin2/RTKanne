@@ -51,7 +51,7 @@ Composants du rover Blue RTK (Boitier plus petit pour poche ou pochette ventrale
 Pour elle montage des composants avec un PCB acheter en plus:
 - PCB pour la version avec carte mère (plus simple à monter et plus fiable) 20,40 euros chez [Aisler](https://aisler.net/p/GPDCRTQV)
 - Barrette mâle droit 2,54mm sécable 40pin (https://www.ebay.fr/itm/116002953919?var=416149221180)
-- Cable silicone pour la batterie et l'interrupteur avec connecteur 2,54mm femelle
+- Connecteur JST XH 2,54mm avec cable silicone pour la batterie et l'interrupteur 1,76 euros chez [Aliexpress](https://fr.aliexpress.com/i/1005007169294004.html?gatewayAdapt=glo2fra)
 - visserie et rondelles pour le boitier, Philips m2x10mm tête fraisée + M2x5mm tête plate, rondelle plastique.
 
 Composants du rover RTKanne compter environ 448 euros + 1 impression 3D (30/40 euros chez un imprimeur en ligne)
