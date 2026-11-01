@@ -41,18 +41,21 @@ Voici la liste des pièces des différents projets, dans le GNSS store on a le c
 Composants du rover Blue RTK (Boitier plus petit pour poche ou pochette ventrale) Compter 374 euros environ + 1 ilpression 3D du boitier (entre 30 et 40 euros chez un imprimeur en ligne) 
 
 - Récepteur RTK L1/L2/L5 Ublox ZED-X20P de chez [GNSS Store](https://gnss.store/high-precision-rtk-gnss-modules/415-elt0421.html)  229,99 Euros HT/ 282 Euros TTC avec port
-- Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html?pdp_npi=4%40dis%21EUR%21€%2016%2C69%21€%2015%2C69%21%21%2119.00%2117.86%21%40211b876717565823921947665ef2ad%2112000031416205032%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2007550542376.32991527632&gatewayAdapt=glo2fra) ATTENTION il faut bien choisir la BT560 dans le shop
-- Module bluetooth Seeed Studio Xiao ESP32C3 7 Euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007039705247.html?pdp_npi=4%40dis%21EUR%21€%200%2C16%21€%200%2C15%21%21%211.26%211.26%21%402103890117565830582966233e6eec%2112000049940483727%21sh%21FR%210%21X&spm=a2g0o.store_pc_allItems_or_groupList.new_all_items_2008969535028.1005007039705247&gatewayAdapt=glo2fra)
+- Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html) ATTENTION il faut bien choisir la BT560 dans le shop
+- Module bluetooth Seeed Studio Xiao ESP32C3 7 Euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007039705247.html)
 - Batterie Lithium Huawei HB434666RBC 1S (4,2V) de 1500mAh pour une 8 heures environ d'autonomie, 18,90  euros [Les batteries du web](https://www.lesbatteriesduweb.fr/batterie-telephone-portable-pour-huawei-hb434666rbc-xml-5799_10491-1063348.html)
 - Régulateur 3,3V Pololu S9V11F3S5C3 avec coupure d'alimentation a 3V afin de préserver la batterie d'une décharge excessive.( https://www.pololu.com/product/2873 ) 10,85 $
 - BMS 1S 1A USB-C TP4056 pour la recharge de la batterie interne ( https://www.otronic.nl/fr/chargeur-de-batterie-lithium-18650-avec-usb-c-5v-1.html ) 1,49 Euros
 - Interrupteur ON/OFF (https://www.ebay.fr/itm/251390016446) ou (https://www.aliexpress.com/item/1005001792406484.html) 
-- Boitier imprimé 3D Blue RTK (version avec et sans PCB)
+- Boitier imprimé 3D Blue RTK (version avec et sans PCB) 30 euros environ chez tech3dimpressions.fr
 Pour elle montage des composants avec un PCB acheter en plus:
 - PCB pour la version avec carte mère (plus simple à monter et plus fiable) 20,40 euros chez [Aisler](https://aisler.net/p/GPDCRTQV)
 - Barrette mâle droit 2,54mm sécable 40pin (https://www.ebay.fr/itm/116002953919?var=416149221180)
-- Connecteur JST XH 2,54mm avec cable silicone pour la batterie et l'interrupteur 1,76 euros chez [Aliexpress](https://fr.aliexpress.com/i/1005007169294004.html?gatewayAdapt=glo2fra)
-- visserie et rondelles pour le boitier, Philips m2x10mm tête fraisée + M2x5mm tête plate, rondelle plastique.
+- Connecteur JST XH 2,54mm avec cable silicone pour la batterie et l'interrupteur 1,76 euros chez [Aliexpress](https://fr.aliexpress.com/i/1005007169294004.html)
+- Visserie et rondelles pour le boitier, Philips m2x10mm tête fraisée + M2x5mm tête plate, rondelle plastique.
+- Chargeur secteur USB-A 2000mAh chez [Aliexpress](https://fr.aliexpress.com/item/1005007473362111.html)
+- Cable USB-C coude 50cm chez [Aliexpress](https://fr.aliexpress.com/item/1005012626094367.html)
+- Pochette de transport pour le récepteur 4,50 euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007138153972.html)
 
 Composants du rover RTKanne compter environ 448 euros + 1 impression 3D (30/40 euros chez un imprimeur en ligne)
 
