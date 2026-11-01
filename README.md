@@ -38,7 +38,7 @@ L'antenne Beitian BT-560 est aussi une alternative moins couteuse à 34 euros, e
 
 Voici la liste des pièces des différents projets, dans le GNSS store on a le choix pour le ZED-F9P entre les fréquences L1/L2 et L1/L5, le L1/L5 est censé être plus robuste en milieu urbain ou foret mais pour une meilleure compatibilité avec le réseau Centipede le L1 L2 est recommandé sauf si vous avez une station L1 L5 près de chez vous. On peut aussi choisir le ZED-X20P qui est en triple fréquence L1 L2 L5, il est un peu plus cher mais offre une meilleure qualité de réception en milieu perturbé et plus de précision en mode DGPS/HAS si il y a une coupure de réseau NTRIP (zone blanches GSM)  
 
-Composants du rover Blue RTK (Boitier plus petit pour poche ou pochette ventrale) Compter 374 euros environ + 1 ilpression 3D du boitier (entre 30 et 40 euros chez un imprimeur en ligne) 
+Composants du rover Blue RTK (Boitier plus petit pour poche ou pochette ventrale) Compter 420 euros environ en incluant l'impression 3D du boitier (environ 30 euros chez un imprimeur en ligne comme Tech3D) 
 
 - Récepteur RTK L1/L2/L5 Ublox ZED-X20P de chez [GNSS Store](https://gnss.store/high-precision-rtk-gnss-modules/415-elt0421.html)  229,99 Euros HT/ 282 Euros TTC avec port
 - Antenne L1 L2 L5 Beitian BT 560 performances similaires a la Ublox 34 Euros chez [Aliexpress](https://fr.aliexpress.com/item/32991527632.html) ATTENTION il faut bien choisir la BT560 dans le shop
@@ -56,6 +56,7 @@ Pour elle montage des composants avec un PCB acheter en plus:
 - Chargeur secteur USB-A 2000mAh chez [Aliexpress](https://fr.aliexpress.com/item/1005007473362111.html)
 - Cable USB-C coude 50cm chez [Aliexpress](https://fr.aliexpress.com/item/1005012626094367.html)
 - Pochette de transport pour le récepteur 4,50 euros chez [Aliexpress](https://fr.aliexpress.com/item/1005007138153972.html)
+
 
 Composants du rover RTKanne compter environ 448 euros + 1 impression 3D (30/40 euros chez un imprimeur en ligne)
 
